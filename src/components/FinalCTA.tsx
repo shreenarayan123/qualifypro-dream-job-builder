@@ -4,21 +4,35 @@ import { Badge } from "@/components/ui/badge";
 
 const FinalCTA = () => {
   return (
-    <section className="py-20 bg-gradient-cta relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
+    <section className="py-20 relative overflow-hidden bg-white">
+      {/* Warm Orange Glow */}
+      <div
+        className="absolute inset-0 z-0"
+        style={{
+          background: "#ffffff",
+          backgroundImage: `
+            radial-gradient(
+              circle at top left,
+              rgba(255, 140, 60, 0.5),
+              transparent 70%
+            )
+          `,
+          filter: "blur(80px)",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-2xl mx-auto text-center text-white">
-          <Badge variant="secondary" className="mb-4 bg-white/20 text-white border-white/30">
+        <div className="max-w-2xl mx-auto text-center">
+          <Badge variant="secondary" className="mb-4">
             Elevate Your Career
           </Badge>
           
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
             Ready to Transform<br />Your Job Search?
           </h2>
           
-          <p className="text-xl text-white/90 mb-8">
+          <p className="text-xl text-muted-foreground mb-8">
             Sign up today and see the difference QualifyPro can make for your career.
           </p>
           
