@@ -29,8 +29,8 @@ const Navbar = () => {
             </button>
           </div>
           
-          <Button className="bg-foreground text-background hover:bg-foreground/90">
-            Try Free →
+          <Button className="bg-foreground text-background hover:bg-foreground/90" asChild>
+            <a href="/app">Try Free →</a>
           </Button>
         </div>
       </div>
