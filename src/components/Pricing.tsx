@@ -129,8 +129,9 @@ const Pricing = () => {
                       ? "bg-foreground text-background hover:bg-foreground/90"
                       : "bg-background text-foreground border border-border hover:bg-muted"
                   }`}
+                  asChild
                 >
-                  Get Started →
+                  <a href="/app">Get Started →</a>
                 </Button>
                 
                 <div className="space-y-3">
