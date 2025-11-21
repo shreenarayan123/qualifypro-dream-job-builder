@@ -45,7 +45,7 @@ const Results = () => {
               <Printer className="w-4 h-4 mr-2" />
               Print
             </Button>
-            <Button variant="outline" size="sm">
+            <Button variant="outline" size="sm" onClick={() => window.print()}>
               <Download className="w-4 h-4 mr-2" />
               Download PDF
             </Button>
