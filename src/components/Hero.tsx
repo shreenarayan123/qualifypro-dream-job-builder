@@ -62,19 +62,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      
-      {/* Floating Stats Card */}
-      <div className="hidden lg:block absolute top-32 right-20 bg-card p-6 rounded-2xl shadow-elevated border border-border">
-        <div className="flex items-start gap-3">
-          <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-            <CheckCircle2 className="w-6 h-6 text-primary" />
-          </div>
-          <div>
-            <p className="text-sm text-muted-foreground">Total active users</p>
-            <p className="text-2xl font-bold">150K+</p>
-          </div>
-        </div>
-      </div>
     </section>
   );
 };
