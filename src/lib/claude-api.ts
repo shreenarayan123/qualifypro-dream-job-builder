@@ -57,7 +57,7 @@ export const analyzeResumePDF = async (
   jobDescription: string
 ): Promise<AnalysisResult> => {
   if (!ANTHROPIC_API_KEY) {
-    throw new Error('Anthropic API key not configured');
+    throw new Error('Anthropic API key not configured. Add VITE_ANTHROPIC_API_KEY to your .env file and restart the dev server.');
   }
 
   const base64PDF = await convertPDFToBase64(pdfFile);
