@@ -43,11 +43,11 @@ const Hero = () => {
           </div>
           
           <div className="flex flex-wrap justify-center gap-4 mb-12">
-            <Button size="lg" className="bg-foreground text-background hover:bg-foreground/90 text-lg px-8">
-              Analyze Resume →
+            <Button size="lg" className="bg-foreground text-background hover:bg-foreground/90 text-lg px-8" asChild>
+              <a href="/app">Analyze Resume →</a>
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8">
-              See Example Report →
+            <Button size="lg" variant="outline" className="text-lg px-8" asChild>
+              <a href="/app">See Example Report →</a>
             </Button>
           </div>
           

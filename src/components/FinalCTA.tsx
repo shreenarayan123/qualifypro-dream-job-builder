@@ -36,14 +36,9 @@ const FinalCTA = () => {
             Sign up today and see the difference QualifyPro can make for your career.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-            <Input
-              type="email"
-              placeholder="Your Email Address"
-              className="bg-white text-foreground border-none h-12"
-            />
-            <Button size="lg" className="bg-foreground text-background hover:bg-foreground/90 whitespace-nowrap">
-              Get Started
+          <div className="text-center">
+            <Button size="lg" className="bg-foreground text-background hover:bg-foreground/90 px-8" asChild>
+              <a href="/app">Get Started</a>
             </Button>
           </div>
         </div>
