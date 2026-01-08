@@ -1,73 +1,216 @@
-# Welcome to your Lovable project
+# QualifyPro
 
-## Project info
+**AI-Powered Resume Analysis for Maximum Interview Callbacks**
 
-**URL**: https://lovable.dev/projects/cfa1d636-ac36-4932-865c-0acda985c101
+![React](https://img.shields.io/badge/React-18.3-61DAFB?style=flat&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-06B6D4?style=flat&logo=tailwindcss)
+![Vite](https://img.shields.io/badge/Vite-5.0-646CFF?style=flat&logo=vite)
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## Overview
 
-**Use Lovable**
+QualifyPro is an intelligent resume optimization tool that helps job seekers maximize their interview callback rates. Using advanced AI analysis, it compares your resume against job descriptions to identify gaps, suggest improvements, and ensure ATS (Applicant Tracking System) compatibility.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/cfa1d636-ac36-4932-865c-0acda985c101) and start prompting.
+**Trusted by 10,000+ job seekers worldwide.**
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## ✨ Features
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 🎯 ATS Compatibility Analysis
+Scan your resume for formatting issues that could cause rejection by automated screening systems.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 🔑 Keyword Matching
+Identify critical keywords from job descriptions that are missing from your resume.
 
-Follow these steps:
+### 📊 Skills Gap Analysis
+Receive a comprehensive score-based assessment of how well your skills align with job requirements.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 💼 Experience Alignment
+Understand how your work experience maps to the position you're targeting.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 📄 Format Analysis
+Get feedback on resume structure, section organization, and overall readability.
 
-# Step 3: Install the necessary dependencies.
-npm i
+### ✅ Actionable Recommendations
+Receive prioritized fixes with impact scores to focus on what matters most.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+---
+
+## 🛠 Tech Stack
+
+| Category | Technology |
+|----------|------------|
+| **Frontend** | React 18, TypeScript, Vite |
+| **Styling** | Tailwind CSS, shadcn/ui |
+| **Backend** | Lovable Cloud (Edge Functions) |
+| **AI** | Claude API (Anthropic) |
+| **State Management** | TanStack Query |
+| **Routing** | React Router v6 |
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── app/                    # Application components
+│   │   ├── FileUploader.tsx    # Resume upload component
+│   │   ├── AnalysisLoading.tsx # Loading state during analysis
+│   │   ├── ScoreCard.tsx       # Score display component
+│   │   └── UpgradeModal.tsx    # Upgrade prompt modal
+│   ├── ui/                     # shadcn/ui components
+│   ├── Benefits.tsx            # Landing page benefits section
+│   ├── FAQ.tsx                 # Frequently asked questions
+│   ├── Footer.tsx              # Site footer
+│   ├── Hero.tsx                # Landing page hero section
+│   ├── HowItWorks.tsx          # Process explanation
+│   ├── Navbar.tsx              # Navigation bar
+│   ├── Pricing.tsx             # Pricing plans
+│   └── Testimonials.tsx        # User testimonials
+├── pages/
+│   ├── Index.tsx               # Landing page
+│   ├── AppHome.tsx             # Resume upload page
+│   ├── Analyze.tsx             # Job description input
+│   ├── Results.tsx             # Analysis results dashboard
+│   └── NotFound.tsx            # 404 page
+├── lib/
+│   ├── claude-api.ts           # Claude API integration
+│   ├── usage-tracking.ts       # Free tier usage tracking
+│   └── utils.ts                # Utility functions
+├── hooks/
+│   ├── use-mobile.tsx          # Mobile detection hook
+│   └── use-toast.ts            # Toast notifications
+└── integrations/
+    └── supabase/               # Backend client configuration
+        ├── client.ts
+        └── types.ts
+
+supabase/
+└── functions/
+    └── analyze-resume/         # Edge function for AI analysis
+        └── index.ts
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ and npm
+
+### Installation
+
+```bash
+# Clone the repository
+git clone <your-repo-url>
+
+# Navigate to project directory
+cd qualifypro
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The app will be available at `http://localhost:5173`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 🔄 How It Works
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. **Upload Your Resume**  
+   Upload your resume as a PDF file through the intuitive drag-and-drop interface.
 
-## What technologies are used for this project?
+2. **Paste Job Description**  
+   Copy and paste the job description you're targeting.
 
-This project is built with:
+3. **AI Analysis**  
+   Our AI engine analyzes your resume against the job requirements, checking for:
+   - ATS compatibility issues
+   - Missing keywords
+   - Skills alignment
+   - Experience relevance
+   - Format optimization opportunities
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+4. **Review Results**  
+   Get a comprehensive report with:
+   - Overall match score
+   - Detailed breakdown by category
+   - Prioritized action items
+   - Specific improvement suggestions
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/cfa1d636-ac36-4932-865c-0acda985c101) and click on Share -> Publish.
+## 🔐 Environment Variables
 
-## Can I connect a custom domain to my Lovable project?
+The following environment variables are automatically configured:
 
-Yes, you can!
+| Variable | Description |
+|----------|-------------|
+| `VITE_SUPABASE_URL` | Backend API URL (auto-configured) |
+| `VITE_SUPABASE_PUBLISHABLE_KEY` | Backend public key (auto-configured) |
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Required Secret (Backend)
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+| Secret | Description |
+|--------|-------------|
+| `ANTHROPIC_API_KEY` | Claude API key for AI analysis |
+
+---
+
+## 📦 Deployment
+
+### Deploy with Lovable
+
+1. Open your project in [Lovable](https://lovable.dev)
+2. Click **Share → Publish**
+3. Your app is live!
+
+### Custom Domain
+
+1. Navigate to **Project → Settings → Domains**
+2. Click **Connect Domain**
+3. Follow the DNS configuration instructions
+
+---
+
+## 💰 Pricing
+
+| Plan | Price | Features |
+|------|-------|----------|
+| **Free** | $0 | 2 resume analyses |
+| **Pro** | $19/month | Unlimited analyses, priority support |
+| **Team** | $49/month | Team collaboration, API access |
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+---
+
+## 📄 License
+
+This project is proprietary software. All rights reserved.
+
+---
+
+## 🙏 Credits
+
+- Built with [Lovable](https://lovable.dev)
+- UI components from [shadcn/ui](https://ui.shadcn.com)
+- AI powered by [Anthropic Claude](https://anthropic.com)
+
+---
+
+<p align="center">
+  Made with ❤️ for job seekers everywhere
+</p>
